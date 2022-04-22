@@ -1,0 +1,26 @@
+name: CI
+on:
+  workflow_dispatch:
+    inputs:
+    
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+      - name: Git Configure
+        run: |
+          git config --local user.name Ethereal
+          git config --local user.email ethereal97@gmail.com
+      - name: Setup FFMPEG
+        uses: FedericoCarboni/setup-ffmpeg@v1
+      - name: Setup Node JS
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.14.2
+      - name: Dependencies Installation
+        run: npm install
+      - name: Running
+        run: node main.js
+      

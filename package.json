@@ -1,0 +1,20 @@
+{
+  "name": "tiktop-top-hits",
+  "description": "",
+  "version": "0.0.1",
+  "license": "ISC",
+  "author": "Ethereal<ethereal97@gmail.com>",
+  "main": "main.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --experimental-module main.js"
+  },
+  "dependecies": {
+    "axios": "*",
+    "fs-extra": "",
+    "jsdom": "*",
+    "mustache": "*",
+    "shelljs": "*"
+  }
+}
