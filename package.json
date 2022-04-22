@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node --experimental-module main.js"
   },
-  "dependecies": {
+  "dependencies": {
     "axios": "*",
     "fs-extra": "*",
     "jsdom": "*",

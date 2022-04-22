@@ -22,5 +22,5 @@ jobs:
       - name: Dependencies Installation
         run: npm install
       - name: Running
-        run: node main.js
+        run: npm start
       
