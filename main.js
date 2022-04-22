@@ -1,4 +1,3 @@
-import mustache from 'mustache';
 import { resolve } from 'path';
 import { readFile, writeFile, readJson } from 'fs-extra';
 import { getTiktokTopHits } from './internals';
