@@ -2,7 +2,8 @@ import { resolve } from 'path';
 import { readFile, writeFile, readJson } from 'fs-extra';
 import { getTiktokTopHits } from './internals';
 
-const STUB_DIR = resolve(__dirname, 'stubs');
+const ROOT_DIR = process.cwd();
+const STUB_DIR = resolve(ROOT_DIR, 'stubs');
 
 const init = async () => {
   const config = {
@@ -10,7 +11,7 @@ const init = async () => {
     updatedAt: undefined,
     hits: undefined,
   };
-  const project = await readJson(resolve(__dirname, 'package.json'));
+  const project = await readJson(resolve(ROOT_DIR, 'package.json'));
   const date = new Date();
   
   config.title = project.name;
