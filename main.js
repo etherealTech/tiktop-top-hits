@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { readFile, writeFile, readJson } from 'fs-extra';
-import { getTiktokTopHits } from './internals/getTiktokTopHits';
+import getTiktokTopHits from './internal/getTiktokTopHits';
 
 const ROOT_DIR = process.cwd();
 const STUB_DIR = resolve(ROOT_DIR, 'stubs');

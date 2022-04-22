@@ -8,7 +8,7 @@ const HTTP_HEADERS = {
   'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
 };
 
-export const getTiktokTopHits = async () => {
+export default async function getTiktokTopHits() {
   const hits = [];
   const { data } = await axios.get(TARGET_URL, {
     responseType: 'text',
@@ -20,4 +20,4 @@ export const getTiktokTopHits = async () => {
   console.log(data);
   
   return hits;
-};
+}
