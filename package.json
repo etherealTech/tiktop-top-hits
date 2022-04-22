@@ -12,7 +12,7 @@
   },
   "dependecies": {
     "axios": "*",
-    "fs-extra": "",
+    "fs-extra": "*",
     "jsdom": "*",
     "shelljs": "*"
   }
