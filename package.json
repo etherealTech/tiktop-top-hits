@@ -8,7 +8,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "node --experimental-module main.js"
+    "start": "node main.js"
   },
   "dependencies": {
     "axios": "*",
